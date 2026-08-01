@@ -1,3 +1,5 @@
+![MeowMatrix](preview.gif)
+
 # 🐱 MeowMatrix
 
 A lightweight cmatrix alternative in pure Python with rainbow mode.
