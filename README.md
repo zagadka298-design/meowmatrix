@@ -1,24 +1,25 @@
 # 🐱 MeowMatrix
 
-A better cmatrix — matrix rain with rainbow mode.
+A better `cmatrix` — matrix digital rain with rainbow mode.
 
-## Features
-- Rainbow mode — every column different color
-- 8+ colors
-- Config file
-- Pure Python, no dependencies
+## ✨ Features
+- 🌈 Rainbow mode — every column different color
+- 🎨 8 colors — red, green, blue, cyan, magenta, yellow, white + rainbow
+- ⚙️ Config file
+- 🔤 3 charsets — full (katakana), ascii, hex
+- ⚡ Lightweight — ~12 MB RAM, pure Python, zero deps
 
-## Install
+## 📦 Install
 git clone https://github.com/zagadka298-design/meowmatrix.git
 cd meowmatrix
 sudo cp meowmatrix.py /usr/local/bin/meowmatrix
-chmod +x /usr/local/bin/meowmatrix
+sudo chmod +x /usr/local/bin/meowmatrix
 
-## Usage
-meowmatrix           (green)
-meowmatrix rainbow   (all colors)
-meowmatrix red       (red)
-meowmatrix --init    (create config)
+## 🚀 Usage
+meowmatrix          (green)
+meowmatrix red      (red)
+meowmatrix rainbow  (all colors)
+meowmatrix --init   (create config)
 
-## License
-MIT
+## ⚙️ Config
+Edit ~/.config/meowmatrix/config.meow
