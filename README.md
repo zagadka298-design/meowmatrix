@@ -9,7 +9,6 @@ A cmatrix alternative with multi-color mixing and cat mode.
 - Multi-color mixing: mewmatrix red white blue
 - Rainbow mode
 - Cat mode: mewmatrix meow
-- White flickering heads
 - Config file + 3 charsets
 
 ## Install
