@@ -1,18 +1,15 @@
-![MeowMatrix](preview.gif)
-
 # 🐱 MeowMatrix
 
-A lightweight cmatrix alternative in pure Python with rainbow mode.
+A lightweight cmatrix alternative in pure Python with multi-color mixing.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
 ## Features
-- Rainbow mode - every column different color
-- 7 colors + config file
-- 3 charsets (katakana, ascii, hex)
-- ~12 MB RAM, 0 dependencies
+- Multi-color mixing: meowmatrix red white blue
+- Rainbow mode: all 7 colors
+- Config file + 3 charsets
+- Zero dependencies
 
 ## Install
 git clone https://github.com/zagadka298-design/meowmatrix.git
@@ -22,8 +19,8 @@ sudo chmod +x /usr/local/bin/meowmatrix
 
 ## Usage
 meowmatrix
+meowmatrix red white
 meowmatrix rainbow
-meowmatrix red
 meowmatrix --init
 
 ## License
