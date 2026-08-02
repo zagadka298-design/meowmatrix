@@ -1,0 +1,2 @@
+[console_scripts]
+meowmatrix = meowmatrix:main

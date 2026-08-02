@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: meowmatrix
+Version: 2.1.0
+Summary: A cmatrix alternative with multi-color mixing + cat mode
+Home-page: https://github.com/zagadka298-design/meowmatrix
+Author: zagadka298
+License: MIT
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary

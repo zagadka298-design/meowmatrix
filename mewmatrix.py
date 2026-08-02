@@ -7,7 +7,7 @@ COLORS = {
     "rainbow":None,"all":None
 }
 
-CONFIG_FILE = os.path.expanduser("~/.config/meowmatrix/config.meow")
+CONFIG_FILE = os.path.expanduser("~/.config/mewmatrix/config.meow")
 DEFAULT_CONFIG = {"color":"green","speed":0.05,"density":0.78,"charset":"full","tail_length":15,"bold_head":True}
 
 def load_config():
@@ -22,6 +22,7 @@ def load_config():
 def main():
     cfg = load_config()
     
+    meow_mode = ("meow" in sys.argv)
     if len(sys.argv) > 1 and sys.argv[1] == "--init":
         os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
         with open(CONFIG_FILE,"w") as f: json.dump(DEFAULT_CONFIG,f,indent=2)
@@ -48,12 +49,15 @@ def main():
     tail_len = int(cfg.get("tail_length",15))
     charset = cfg.get("charset","full")
     
-    chars_map = {
-        "full":"ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        "ascii":"abcdefghijklmnopqrstuvwxyz0123456789",
-        "hex":"0123456789ABCDEF"
-    }
-    chars = chars_map.get(charset, chars_map["full"])
+    if meow_mode:
+        chars = "🐱😺😸😻😽😼🙀😿😾"
+    else:
+        chars_map = {
+            "full":"ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "ascii":"abcdefghijklmnopqrstuvwxyz0123456789",
+            "hex":"0123456789ABCDEF"
+        }
+        chars = chars_map.get(charset, chars_map["full"])
     
     cols = os.get_terminal_size().columns
     rows = os.get_terminal_size().lines
@@ -63,7 +67,7 @@ def main():
     lengths = [random.randint(6,tail_len+10) for _ in range(cols)]
     
     sys.stdout.write("\033[2J\033[?25l")
-    print(f"  meowmatrix ({len(selected)} color(s)) Ctrl+C to stop")
+    print(f"  mewmatrix ({len(selected)} color(s)) Ctrl+C to stop")
     
     try:
         while True:

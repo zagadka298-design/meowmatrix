@@ -1,0 +1,7 @@
+README.md
+setup.py
+meowmatrix.egg-info/PKG-INFO
+meowmatrix.egg-info/SOURCES.txt
+meowmatrix.egg-info/dependency_links.txt
+meowmatrix.egg-info/entry_points.txt
+meowmatrix.egg-info/top_level.txt
